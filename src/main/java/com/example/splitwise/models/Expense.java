@@ -5,6 +5,7 @@ import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -13,6 +14,7 @@ import java.util.List;
 public class Expense extends BaseModel {
     private String title;
     private int amount;
+    private Date date;
 
     @OneToMany(mappedBy = "expense")
     private List<ExpenseContribution> expenseContributions;
