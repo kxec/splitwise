@@ -20,7 +20,7 @@ public class GetUserCommand implements Command{
 
     @Override
     public boolean canExecute(String input) {
-        if(!input.equals("get-user")) return false;
+        if(!input.startsWith("get-user")) return false;
 
         if(input.split(" ").length != 2) return false;
 

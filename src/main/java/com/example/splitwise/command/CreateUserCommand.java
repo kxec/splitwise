@@ -20,7 +20,7 @@ public class CreateUserCommand implements Command{
 
     @Override
     public boolean canExecute(String input) {
-        if(!input.equals("create-user")) return false;
+        if(!input.startsWith("create-user")) return false;
 
         if(input.split(" ").length != 4) return false;
 

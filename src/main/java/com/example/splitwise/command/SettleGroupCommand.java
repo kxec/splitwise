@@ -21,7 +21,7 @@ public class SettleGroupCommand implements Command{
 
     @Override
     public boolean canExecute(String input) {
-        if(!input.equals("settle-group")) return false;
+        if(!input.startsWith("settle-group")) return false;
 
         if(input.split(" ").length != 2) return false;
 
