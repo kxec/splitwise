@@ -22,7 +22,7 @@ public class GroupController{
         this.settleUpService = settleUpService;
     }
 
-    public SettleUpResponseDTO settleUp(SettleUpRequestDTO settleUpRequestDTO)
+    public SettleUpResponseDTO settleUpGroup(SettleUpRequestDTO settleUpRequestDTO)
     {
         SettleUpResponseDTO responseDTO = new SettleUpResponseDTO();
 
